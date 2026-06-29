@@ -2,14 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Luis Burciaga | Soluciones de Alto Impacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Burciaga | Arquitecto de Soluciones</title>
     <style>
         :root { --bg: #0a0a0a; --accent: #00ff9d; --text: #e0e0e0; }
-        body { background: var(--bg); color: var(--text); font-family: 'JetBrains Mono', monospace; padding: 40px; }
-        .hero { border-left: 2px solid var(--accent); padding-left: 20px; margin-bottom: 50px; }
-        .project-card { border: 1px solid #333; padding: 25px; margin-bottom: 30px; border-radius: 4px; }
-        .tag { color: var(--accent); font-size: 0.8em; margin-right: 10px; }
-        h1 { color: #fff; }
+        body { background: var(--bg); color: var(--text); font-family: 'Courier New', monospace; padding: 20px; line-height: 1.5; max-width: 600px; margin: auto; }
+        .hero { margin-bottom: 40px; border-left: 3px solid var(--accent); padding-left: 15px; }
+        h1 { margin: 0; color: #fff; }
+        .project-card { border: 1px solid #333; padding: 20px; margin-bottom: 25px; border-radius: 8px; }
+        .build-log { font-size: 0.8em; color: var(--accent); margin-top: 10px; border-top: 1px solid #333; padding-top: 10px; }
+        .btn { display: block; width: 100%; padding: 15px; background: var(--accent); color: #000; text-align: center; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 10px; }
     </style>
 </head>
 <body>
@@ -19,14 +21,28 @@
     </div>
 
     <div class="project-card">
-        <span class="tag">[ARCHITECTURE]</span>
-        <h3>Don Caja: Motor de Gestión Financiera</h3>
-        <p>Desarrollo de un sistema de control de ventas con persistencia en tiempo real. 
-           Implementé una capa de abstracción para la exportación de reportes, 
-           resolviendo conflictos de codificación de caracteres a nivel de byte-stream.</p>
-        <button onclick="window.location.href='#'">VER CÓDIGO FUENTE</button>
+        <h3>Don Caja</h3>
+        <p>Sistema de gestión financiera con persistencia en tiempo real. Resuelto conflicto de codificación mediante normalización de byte-stream.</p>
+        <div class="build-log">> Tiempo de desarrollo: 4 horas</div>
     </div>
 
-    <!-- AQUÍ SEGUIRÍAN TUS OTROS PROYECTOS -->
+    <div class="project-card">
+        <h3>Lector de Tickets (OCR)</h3>
+        <p>Pipeline de automatización para extracción de datos estructurados desde comprobantes físicos sin intervención manual.</p>
+        <div class="build-log">> Tiempo de desarrollo: 6 horas</div>
+    </div>
+
+    <div class="project-card">
+        <h3>Reloj Astrológico Simbólico</h3>
+        <p>Motor lógico de alta precisión para visualización de datos astronómicos complejos mediante algoritmos predictivos.</p>
+        <div class="build-log">> Tiempo de desarrollo: 5 horas</div>
+    </div>
+
+    <a href="#" class="btn">DESCARGAR CV PDF</a>
+    <a href="#" class="btn" style="background:#444; color:#fff;">VER LANDING DE TIKTOK</a>
+
+    <div style="margin-top:40px; font-size: 0.7em; text-align: center;">
+        "El software es el vehículo, la eficiencia es el destino."
+    </div>
 </body>
 </html>
